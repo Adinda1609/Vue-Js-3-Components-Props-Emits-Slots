@@ -1,3 +1,11 @@
 <template>
-    halo, ini adalah komponen dari mahasiswa
+    Halo, ini adalah siswi bernama {{ mahasiswi }} 🚀
 </template>
+
+<script>
+    export default {
+        props: {
+            mahasiswi : String
+        }
+    }
+</script>

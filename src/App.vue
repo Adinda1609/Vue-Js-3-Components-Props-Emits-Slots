@@ -1,5 +1,7 @@
 <template>
-  <Mahasiswa />
+  <Mahasiswa mahasiswi="Sri Adinda" /> <br>
+  <Mahasiswa mahasiswi="Indri Reynani"/> <br>
+  <Mahasiswa mahasiswi="Rahma Fatharani" />
 </template>
 
 <script>
