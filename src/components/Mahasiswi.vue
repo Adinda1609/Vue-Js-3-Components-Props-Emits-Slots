@@ -1,4 +1,7 @@
 <template>
+    <slot>
+        ini adalah slot default karena parent component tidak memberikan data
+    </slot><br>
     Halo, ini adalah siswi bernama {{ mahasiswi }} 🚀 <button @click="showData">Show Detail</button><br>
 </template>
 

@@ -1,7 +1,8 @@
 <template>
-  <Mahasiswi @response="showData" mahasiswi="Sri Adinda" /> <br>
-  <Mahasiswi @response="showData" mahasiswi="Indri Reynanti" /> <br>
-  <Mahasiswi @response="showData" mahasiswi="Rahma fatharani" /> 
+  <Mahasiswi @response="showData" mahasiswi="Sri Adinda"> Ini  adalah nilai  slot dari Parent</Mahasiswi> <br>
+  <Mahasiswi @response="showData" mahasiswi="Indri Reynanti"> </Mahasiswi> <br>
+  <Mahasiswi @response="showData" mahasiswi="Rahma fatharani"> </Mahasiswi> 
+
 <p>
   Mahasiswi yang dipilih adalah : {{ seelectedMahasiswi }}  
 </p>
