@@ -1,7 +1,7 @@
 <template>
-<Mahasiswi @response="(whatever) => seelectedMahasiswi=whatever" mahasiswi="Sri Adinda" /> <br>
-<Mahasiswi @response="(whatever) => seelectedMahasiswi=whatever" mahasiswi="Indri Reynanti" /> <br>
-<Mahasiswi @response="(whatever) => seelectedMahasiswi=whatever" mahasiswi="Rahma fatharani" /> 
+  <Mahasiswi @response="showData" mahasiswi="Sri Adinda" /> <br>
+  <Mahasiswi @response="showData" mahasiswi="Indri Reynanti" /> <br>
+  <Mahasiswi @response="showData" mahasiswi="Rahma fatharani" /> 
 <p>
   Mahasiswi yang dipilih adalah : {{ seelectedMahasiswi }}  
 </p>
@@ -18,6 +18,11 @@
     data() {
       return {
         seelectedMahasiswi : ''
+      }
+    },
+    methods : {
+      showData(mahasiswi) {
+        this.seelectedMahasiswi = mahasiswi;
       }
     }
   } 
